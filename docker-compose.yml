@@ -1,0 +1,12 @@
+version: '3.8'
+
+
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins
+    ports:
+      - 8080:8080
+    volumes:
+      - /home/ec2-user/CI-CDTestRepo/jenkins_volume:/var/jenkins_home
+
